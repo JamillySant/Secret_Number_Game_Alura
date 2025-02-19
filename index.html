@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <title>Projeto HTML</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+
+<body onload="time()">
+  <header>
+    <h1>CALCULE SEU IMC</h1>
+  </header>
+  <section class="container">
+      <form action="/" id="formulario" method="POST">
+        <label for="peso">Peso</label>
+        <input type="text" id="peso" name="peso">
+
+        <label for="altura">Altura</label>
+        <input type="text" id="altura" name="altura">
+
+        <button type="submit" class="button">Tudo Pronto</button>
+      </form>
+    <div id="resultado"></div>
+  </section>
+
+  <header>
+    <h1>HORA DO DIA</h1>
+  </header>
+<section class="sectionum">
+    <p class="semana" id="dia"></p>
+
+    <div class="data" id="dat"> 
+        DATA
+    </div>
+
+    <div class="hora" id="sms">
+        HORA
+     </div>
+
+    <div id="foto">
+      <img class ="fotododia" id="imagem" src="" alt="Foto do Horário">
+    </div>
+</section>
+  <footer>
+    <br><p>Obrigado pela visita!</p>
+  </footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>
