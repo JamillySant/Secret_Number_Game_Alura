@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav {
+    background-color: black;
+    padding: 10px 0; /* Adicionando um espaçamento vertical */
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+.nav ul {
+    list-style: none;
+    display: flex; /* Para alinhar os itens lado a lado */
+    padding: 0;
+}
+
+.nav li {
+    margin: 0 10px; /* Espaçamento entre os itens do menu */
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+.nav a:hover {
+    background-color: rgba(30, 103, 238, 0.733);
+}
+
+body {
+    background-color: #3c3c3c;
+}
+
+.logo {
+    height: 450px;
+    width: 1000px;
+    margin: auto;
+    display: block;
+}
+
+.img_cur {
+    width: 600px;
+    height: 300px;
+    display: block;
+    margin: 20px auto; /* Centraliza a imagem */
+    text-align: center;
+}
+
+.tit {
+    text-align: center;
+    font-family: Andale Mono, monospace;
+}
+
+.parag {
+    font-family: Andale Mono, monospace;
+    font-size: 20px;
+    text-align: justify;
+    padding: 0px 150px;
+}
+
+.t {
+    font-family: Andale Mono, monospace;
+    padding: 0px 150px;   
+}
+
+/* Media Queries para responsividade */
+@media screen and (max-width: 768px) {
+    /* Menu adaptado para coluna */
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav li {
+        margin: 5px 0;
+    }
+    
+    /* Ajusta a logo para ocupar maior parte da tela */
+    .logo {
+        width: 90%;
+        height: auto;
+    }
+    
+    /* Imagem ajustada para telas menores */
+    .img_cur {
+        width: 90%;
+        height: auto;
+    }
+    
+    /* Reduz o espaçamento interno dos parágrafos e textos */
+    .parag,
+    .t {
+        padding: 0 20px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Ajuste adicional para telas muito pequenas */
+    .nav a {
+        padding: 10px 15px;
+    }
+    
+    .parag,
+    .t {
+        padding: 0 10px;
+        font-size: 14px;
+    }
+}

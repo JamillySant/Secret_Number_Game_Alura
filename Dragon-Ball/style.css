@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav {
+    background-color: black;
+    padding: 10px 0; /* Adicionando um espaçamento vertical */
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+.nav ul {
+    list-style: none;
+    display: flex; /* Para alinhar os itens lado a lado */
+    padding: 0;
+}
+
+.nav li {
+    margin: 0 10px; /* Espaçamento entre os itens do menu */
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+.nav a:hover {
+    background-color: rgba(30, 103, 238, 0.733);
+}
+
+/* Imagem responsiva */
+.img_home {
+    width: 100%; /* Ajusta à largura da tela */
+    height: auto; /* Mantém a proporção */
+    max-width: 1600px; /* Limita o tamanho máximo */
+}
+
+/* Ajustes para telas menores */
+@media screen and (max-width: 768px) {
+    .nav ul {
+        flex-direction: column; /* Menu vertical no celular */
+        align-items: center;
+    }
+    
+    .nav li {
+        margin: 5px 0; /* Reduz espaçamento */
+    }
+}
