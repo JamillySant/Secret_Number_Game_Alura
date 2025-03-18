@@ -1,6 +1,6 @@
 # Projetos HTML e CSS 📚
 
-##📌 Este repositório conta com alguns projetos simples de HTML para estudo de tags e css. 
+### 📌 Este repositório conta com alguns projetos simples de HTML para estudo de tags e css. 
 
 ### 🔥 Drabon Ball 
 Esse projeto apresenta "hérois" e "vilões" da franquia acima.
